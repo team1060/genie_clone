@@ -1,3 +1,4 @@
+// 공지사항
 const announcementList = [
     {
 
@@ -138,6 +139,7 @@ const announcementList = [
     }
 ]
 
+// 회사 엠블렘
 const emblemList = [
     '//image.genie.co.kr/imageg/web/common/emblem_kdce.png',
     '//image.genie.co.kr/imageg/web/common/emblem_copyright.png',
@@ -149,6 +151,7 @@ const emblemList = [
     '//image.genie.co.kr/imageg/web/common/emblem_music_220420.png'
 ]
 
+// 최신가요
 const newMusic = [
     {
         "img": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/084/493/418/84493418_1700198919721_1_200x200.JPG",
@@ -872,4 +875,130 @@ const newMusic = [
     }
 ]
 
-export { announcementList, emblemList, newMusic }
+/*
+const recommendationArray = [];
+document.querySelectorAll('.recommend').forEach((li, index) => {
+  const coverMainSrc = li.querySelector('.cover-main img').getAttribute('src');
+  const coverLeftSrc = li.querySelector('.cover-left img').getAttribute('src');
+  const coverRightSrc = li.querySelector('.cover-right img').getAttribute('src');
+
+  recommendationArray.push({
+    main: coverMainSrc,
+    left: coverLeftSrc,
+    right: coverRightSrc
+  });
+});
+
+const infoArray = [];
+document.querySelectorAll('.recommend .info').forEach((infoLink, index) => {
+  const categoryElement = infoLink.querySelector('.category');
+  const titleElement = infoLink.querySelector('.title');
+  const djNameElement = infoLink.querySelector('.dj .dj-name');
+
+  // 요소가 존재하는지 체크 후 텍스트 값을 가져옴
+  const category = categoryElement ? categoryElement.textContent : '';
+  const title = titleElement ? titleElement.textContent : '';
+  const djName = djNameElement ? djNameElement.textContent : '';
+
+  infoArray.push({
+    category: category,
+    title: title,
+    djName: djName
+  });
+});
+const mergedArray = recommendationArray.map((recommendation, index) => ({
+  main: recommendation.main,
+  left: recommendation.left,
+  right: recommendation.right,
+  category: infoArray[index].category,
+  title: infoArray[index].title,
+  djName: infoArray[index].djName,
+}));
+
+console.log(mergedArray);
+*/
+// 에디터 추천
+const editorRecommendList = [
+    {   
+        "main": "//image.genie.co.kr/Y/IMAGE/IMG_MUZICAT/main/mainEditorChoice_20231117172312.jpg/dims/resize/Q_80,0",
+        "left": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/084/469/044/84469044_1699586742696_1_140x140.JPG/dims/resize/Q_80,0",
+        "right": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/321/151/81321151_1574923528631_1_140x140.JPG/dims/resize/Q_80,0",
+        "category": "추천선곡",
+        "title": "크리스마스 오브제를 담은 플레이리스트 🎁🎄",
+        "djName": "DJ 알잘딱깔센"
+    },
+    {
+        "main": "//image.genie.co.kr/Y/IMAGE/IMG_MUZICAT/main/mainEditorChoice_2023111718350.png/dims/resize/Q_80,0",
+        "left": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/698/023/81698023_1603942597915_1_140x140.JPG/dims/resize/Q_80,0",
+        "right": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/056/496/81056496_1675752332925_1_140x140.JPG/dims/resize/Q_80,0",
+        "category": "추천선곡",
+        "title": "벽난로 앞에서 고요히 즐기는 겨울의 낭만",
+        "djName": "DJ 157"
+    },
+    {
+        "main": "//image.genie.co.kr/Y/IMAGE/IMG_MUZICAT/main/mainEditorChoice_20231117164133.png/dims/resize/Q_80,0",
+        "left": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/920/464/80920464_1486631409810_1_140x140.JPG/dims/resize/Q_80,0",
+        "right": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/055/770/025/55770025_1_140x140.jpg/dims/resize/Q_80,0",
+        "category": "추천선곡",
+        "title": "재즈 음악이 흐르는 뉴올리언스의 어느 바에서🍸",
+        "djName": "DJ 삐삐"
+    },
+    {
+        "main": "//image.genie.co.kr/Y/IMAGE/IMG_MUZICAT/main/mainEditorChoice_2023111620150.png/dims/resize/Q_80,0",
+        "left": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/084/451/913/84451913_1698990029441_1_140x140.JPG/dims/resize/Q_80,0",
+        "right": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/084/494/146/84494146_1700101051447_1_140x140.JPG/dims/resize/Q_80,0",
+        "category": "추천선곡",
+        "title": "가볍고 폭닥한 알앤비로 오늘의 감성충전💞",
+        "djName": "DJ 수수"
+    },
+    {
+        "main": "//image.genie.co.kr/Y/IMAGE/IMG_MUZICAT/main/mainEditorChoice_20231114173323.png/dims/resize/Q_80,0",
+        "left": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/021/088/593/21088593_1409644354684_1_140x140.JPG/dims/resize/Q_80,0",
+        "right": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/347/602/81347602_1669342756142_1_140x140.JPG/dims/resize/Q_80,0",
+        "category": "추천선곡",
+        "title": "찬 바람이 불어도 내 하루는 펑키해 ✨💃",
+        "djName": "DJ 자몽"
+    },
+    {
+        "main": "//image.genie.co.kr/Y/IMAGE/IMG_MUZICAT/main/mainEditorChoice_20231110171953.png/dims/resize/Q_80,0",
+        "left": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/082/569/159/82569159_1646430332817_1_140x140.JPG/dims/resize/Q_80,0",
+        "right": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/082/964/303/82964303_1662767462385_1_140x140.JPG/dims/resize/Q_80,0",
+        "category": "추천선곡",
+        "title": "뒹굴뒹굴, 누워있는 게 내 취미야🙃",
+        "djName": "DJ 솝"
+    },
+    {
+        "main": "//image.genie.co.kr/Y/IMAGE/IMG_MUZICAT/main/mainEditorChoice_2023111015117.jpg/dims/resize/Q_80,0",
+        "left": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/111/231/81111231_1666934442396_1_140x140.JPG/dims/resize/Q_80,0",
+        "right": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/069/199/820/69199820_1386753884476_1_140x140.JPG/dims/resize/Q_80,0",
+        "category": "추천선곡",
+        "title": "나만 벌써 설레? 크리스마스 마켓에서 듣고싶은 캐럴🎄",
+        "djName": "DJ 뮤"
+    },
+    {
+        "main": "//image.genie.co.kr/Y/IMAGE/IMG_MUZICAT/main/mainEditorChoice_2023111084934.png/dims/resize/Q_80,0",
+        "left": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/083/393/527/83393527_1672726301905_1_140x140.JPG/dims/resize/Q_80,0",
+        "right": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/307/797/81307797_1573628737716_1_140x140.JPG/dims/resize/Q_80,0",
+        "category": "추천선곡",
+        "title": "삿포로에 갈까요, 멍을 덮으러",
+        "djName": "DJ 자몽"
+    },
+    {
+        "main": "//image.genie.co.kr/Y/IMAGE/IMG_MUZICAT/main/mainEditorChoice_20231110102345.png/dims/resize/Q_80,0",
+        "left": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/050/761/862/50761862_1407809133312_1_140x140.JPG/dims/resize/Q_80,0",
+        "right": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/643/926/80643926_1437557593986_1_140x140.JPG/dims/resize/Q_80,0",
+        "category": "추천선곡",
+        "title": "가을의 뉴욕 속으로, 재즈와 함께~",
+        "djName": "DJ 란나"
+    },
+    {
+        "main": "//image.genie.co.kr/Y/IMAGE/IMG_MUZICAT/main/mainEditorChoice_202311719324.png/dims/resize/Q_80,0",
+        "left": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/117/097/81117097_1540358395075_1_140x140.JPG/dims/resize/Q_80,0",
+        "right": "//image.genie.co.kr/Y/IMAGE/IMG_ALBUM/084/280/642/84280642_1695013846710_1_140x140.JPG/dims/resize/Q_80,0",
+        "category": "추천선곡",
+        "title": "찬 바람 불 땐, 핫초코 앤 알앤비☕",
+        "djName": "DJ 삐삐"
+    }
+]
+
+export { announcementList, emblemList, newMusic, editorRecommendList }

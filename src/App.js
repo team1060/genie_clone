@@ -4,15 +4,13 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Header from './components/Header/Header';
 import Footer from './components/footer/Footer';
-import Swiper1 from './components/main/Swiper1';
+import Main from './components/main/Main';
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <Swiper1></Swiper1>
-      <hr></hr>
+      <Main></Main>
       <Footer></Footer>
-      
     </div>
   );
 }

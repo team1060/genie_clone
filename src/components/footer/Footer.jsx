@@ -6,6 +6,7 @@ import FootEmblem from "./FootEmblem";
 function Footer() {
     return (
         <div>
+            <hr></hr>
             <FootNav></FootNav>
             <hr></hr>
             <FootLink></FootLink>

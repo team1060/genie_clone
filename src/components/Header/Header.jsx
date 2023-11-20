@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 
 function Header() {
     return (
-      <div>
+      <div className="mb-5">
         <NavBar></NavBar>
         <Logo></Logo>
         <Menu></Menu>

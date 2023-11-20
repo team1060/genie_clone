@@ -2,7 +2,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 function DropDown() {
   return (
-    <Dropdown className='text-end'>
+    <Dropdown className='text-end dropDown'>
       <Dropdown.Toggle variant="primary" id="dropdown-basic">
         로그인/회원가입
       </Dropdown.Toggle>

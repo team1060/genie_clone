@@ -8,6 +8,7 @@ import 'swiper/css/scrollbar';
 import { Card } from 'react-bootstrap';
 import { editorRecommendList } from '../../data/data';
 import { useEffect, useState } from 'react';
+import { Navigation } from 'swiper/modules';
 
 // Swiper Core 사용
 
@@ -44,6 +45,7 @@ function EditorCard() {
         <Swiper
             spaceBetween={16}
             slidesPerView={slidesPerView}
+            navigation={true} modules={[Navigation]}
         >
             {editorRecommendList.map((item, index) => (
                 <SwiperSlide key={index}>
@@ -59,7 +61,7 @@ function EditorCard() {
                                 <img src={item.right} alt={`Right ${index + 1}`} />
                             </div>
                         </div>
-                        <Card.Body>
+                        <Card.Body className='recommendBody'>
                             <Card.Title className='small'>{item.djName}</Card.Title>
                             <Card.Text style={{ height: '52px', overflowY: 'hidden'}}>{item.title}</Card.Text>
                             <Card.Text className='small'>{item.category}</Card.Text>

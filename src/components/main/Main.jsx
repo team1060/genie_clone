@@ -1,6 +1,6 @@
 import EditorRecommend from "./EditorRecommend";
-import HotAndNew from "./HotAndNew";
-import MusicSwiper from "./MusicSwiper";
+import HotAndNew from "./Top100List";
+import MusicSwiper from "./LatestSwiper";
 
 function Main() {
     return (

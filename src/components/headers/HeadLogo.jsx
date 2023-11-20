@@ -1,10 +1,10 @@
 import { Col, Container, Row, Image } from 'react-bootstrap';
-import Search from './Search';
+import Search from './HeadSearch';
 
 function Logo() {
 
     return (
-        <Container className="mb-2">
+        <Container className="mb-3 logo">
             <Row className='justify-content-between align-items-center'>
                 <Col xs="auto">
                     <h1>

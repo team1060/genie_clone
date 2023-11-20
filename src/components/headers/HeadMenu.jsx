@@ -1,13 +1,13 @@
 import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
-import DropDown from "./DropDown";
+import DropDown from "./HeadDropDown";
 
 function Menu() {
   return (
-    <Container>
+    <Container className="menu">
       <Row className="align-items-center">
         <Col lg={10}>
           {/* 큰 화면 크기에서의 레이아웃 */}
-          <Row lg="auto" className="mb-4 mb-lg-0 d-none d-md-block text-center text-lg-left">
+          <Row lg="auto" className="menu_inner mb-4 mb-lg-0 d-none d-md-block text-center text-lg-left">
             <div className="d-flex">
               <Col>지니차트</Col>
               <Col>최신음악</Col>
